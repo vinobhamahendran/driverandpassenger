@@ -1,0 +1,49 @@
+.driver-logo{
+    width: 45%;
+    float: right;
+}
+.dt-login__content{
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+    background-color: #8167c9ad;
+    border-radius: 1em;
+}
+.dt-login__content-inner{
+    padding: 4rem 2.2rem 2.2rem;
+}
+.form-group label{
+    color: #fff;
+}
+.desktop-hide{
+    display: none;
+}
+.logo{
+    width: 15%;
+    margin-bottom: 7em
+}
+@media (max-width: 768px)  {
+    .driver-logo{
+    display: none;
+}
+.desktop-hide{
+    display: block;
+    text-align: center
+}
+.logo{
+    width: 50%;
+}
+}
+@media (min-width: 576px){
+    .driver-logo{
+        display: block;
+    }
+    .desktop-hide{
+        display: none;
+        
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    .ml-2, .mx-2 {
+      margin-left: 0.2rem !important;
+    }
+  }
+

@@ -1,0 +1,62 @@
+<div class="row ride-details">
+    <div class="col-md-6">
+    <div class="" *ngFor='let data of rideDetails;index as i'>
+      <form>
+          <h1 style="margin-right: -10px;
+          margin-left: -10px; margin-top:20px">Passenger {{i+1}}</h1>
+        <div class="form-group form-row">
+          <label class="col-xl-3 col-form-label" for="pickup-location"><svg class="pick"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%"
+              viewBox="0 0 22 24" version="1.1" xml:space="preserve"
+              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+              <g transform="matrix(0.0416667,0,0,0.0416667,0.333333,1.33333)">
+                <path
+                  d="M256,0C194.24,0 144,50.24 144,112C144,168.256 185.856,214.528 240,222.368L240,432C240,440.832 247.168,448 256,448C264.832,448 272,440.832 272,432L272,222.368C326.144,214.528 368,168.256 368,112C368,50.24 317.76,0 256,0ZM256,192C211.904,192 176,156.096 176,112C176,67.904 211.904,32 256,32C300.096,32 336,67.904 336,112C336,156.096 300.096,192 256,192Z"
+                  style="fill:rgb(74,190,89);fill-rule:nonzero;"></path>
+                <path
+                  d="M321.376,354.624C312.288,353.568 304.832,360.384 304.064,369.184C303.296,377.984 309.824,385.728 318.624,386.496C422.176,395.456 464,422.304 464,432C464,446.368 393.248,480 256,480C118.752,480 48,446.368 48,432C48,422.304 89.824,395.456 193.376,386.496C202.176,385.728 208.704,377.984 207.936,369.184C207.168,360.384 199.584,353.568 190.624,354.624C149.664,358.176 16,374.208 16,432C16,486.976 140.416,512 256,512C371.584,512 496,486.976 496,432C496,374.208 362.336,358.176 321.376,354.624Z"
+                  style="fill:rgb(74,190,89);fill-rule:nonzero;"></path>
+                <path
+                  d="M256,64C247.168,64 240,71.168 240,80C240,88.832 247.168,96 256,96C264.832,96 272,103.168 272,112C272,120.832 279.168,128 288,128C296.832,128 304,120.832 304,112C304,85.536 282.464,64 256,64Z"
+                  style="fill:rgb(74,190,89);fill-rule:nonzero;"></path>
+              </g>
+            </svg>Pick up</label>
+          <div class="col-xl-8">
+            <span class="form-control" id="pickup-location"
+              >{{data.pickup}}</span>
+          </div>
+        </div>
+        <div class="form-group form-row">
+          <label class="col-xl-3 col-form-label" for="dropoff-location"><svg class="drop"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%"
+              viewBox="0 0 22 24" version="1.1" xml:space="preserve"
+              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+              <g transform="matrix(0.0416667,0,0,0.0416667,0.333333,1.33333)">
+                <path
+                  d="M256,0C194.24,0 144,50.24 144,112C144,168.256 185.856,214.528 240,222.368L240,432C240,440.832 247.168,448 256,448C264.832,448 272,440.832 272,432L272,222.368C326.144,214.528 368,168.256 368,112C368,50.24 317.76,0 256,0ZM256,192C211.904,192 176,156.096 176,112C176,67.904 211.904,32 256,32C300.096,32 336,67.904 336,112C336,156.096 300.096,192 256,192Z"
+                  style="fill:rgb(74,190,89);fill-rule:nonzero;"></path>
+                <path
+                  d="M321.376,354.624C312.288,353.568 304.832,360.384 304.064,369.184C303.296,377.984 309.824,385.728 318.624,386.496C422.176,395.456 464,422.304 464,432C464,446.368 393.248,480 256,480C118.752,480 48,446.368 48,432C48,422.304 89.824,395.456 193.376,386.496C202.176,385.728 208.704,377.984 207.936,369.184C207.168,360.384 199.584,353.568 190.624,354.624C149.664,358.176 16,374.208 16,432C16,486.976 140.416,512 256,512C371.584,512 496,486.976 496,432C496,374.208 362.336,358.176 321.376,354.624Z"
+                  style="fill:rgb(74,190,89);fill-rule:nonzero;"></path>
+                <path
+                  d="M256,64C247.168,64 240,71.168 240,80C240,88.832 247.168,96 256,96C264.832,96 272,103.168 272,112C272,120.832 279.168,128 288,128C296.832,128 304,120.832 304,112C304,85.536 282.464,64 256,64Z"
+                  style="fill:rgb(74,190,89);fill-rule:nonzero;"></path>
+              </g>
+            </svg>Drop off</label>
+          <div class="col-xl-8">
+            <span class="form-control" id="pickup-location"
+              >{{data.dropoff}}</span>
+          </div>
+        </div>
+        <div class="form-row mb-0">
+          <button type="submit" class="btn btn-primary text-uppercase">Start For Ride</button>
+        </div>
+      </form>
+      <hr class="border-dashed my-8">
+    </div>
+      
+    </div>
+    <div class="col-md-6">
+      <app-map></app-map>
+    </div>
+  </div>

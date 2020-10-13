@@ -1,0 +1,79 @@
+.form-group{
+    background: #f0f0f0;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    padding: 0px 10px;
+    font-size: 14px;
+}
+.form-group span{
+    background: #f0f0f0;
+    border: none;
+    box-shadow: none;
+    
+}
+.form-control:focus{
+    border: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+}
+  svg {
+    width: 15%;
+    margin-right:10px;
+  }
+  svg.drop path {
+    fill: red !important;
+}
+.close-reset, .close-reset:focus{
+    border: none;
+    outline: none;
+}
+.btn-padding{
+    padding: 0.5rem 0.9rem;
+}
+.plate img, .seat img {
+    width: 30%;
+    
+}
+.driver-details .col-md-3{
+width: auto;
+}
+.border-1{
+    border: 1px solid #eee;
+    padding: 10px !important;
+    box-shadow: 0 0 5px -4px black;
+}
+@media (max-width: 768px){
+    svg {
+        width: 5%;
+        margin-right:10px;
+      }  
+      svg.wrong {
+        width: 5%;
+    }
+    .ride-details{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .form-group{
+        width:100%;
+    }
+    .plate img, .seat img {
+        width: 30%;
+    }
+    .border-1{
+        margin-top: 20px;
+        border-style: none;
+        box-shadow:unset;        
+    }
+    .plate{
+        border-right: 1px solid #eee !important;
+    }
+}
+// ipad media query
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    svg {
+        width: 5%;
+        margin-right:10px;
+      }
+      .col-md-6{
+        max-width: 100%;
+      }
+}

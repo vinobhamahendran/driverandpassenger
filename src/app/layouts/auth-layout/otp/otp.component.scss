@@ -1,0 +1,26 @@
+@import '../driver-login/driver-login.component.scss';
+.form-group label{
+    color: #000;
+}
+
+input[type=number] {
+    height: 45px;
+    width: 45px;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid #000000;
+    margin-right: 12px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.close:focus{
+outline: none;
+}
+.modal-header .close{
+  margin: -4.6rem -9.6rem -1.6rem auto;
+  font-size: 4.1rem;
+}
+
